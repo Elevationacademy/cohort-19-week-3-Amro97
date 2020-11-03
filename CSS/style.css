@@ -1,0 +1,83 @@
+  
+#chat{
+    height: 100vh;
+    display: grid;
+    background-color:black;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f i";
+}
+
+#friends{
+    display: grid;
+    grid-area: f;
+    padding-left: 12px;
+    background-color: #8e44ad;
+    padding-right: 12px;
+}
+
+#friends > p{
+    padding-left: 5px;
+    background-color: #9b59b6;
+    padding: 7px;
+    align-self: center;
+    font-family: 'Nunito', sans-serif;
+}
+#friends > h3{
+    font-family: 'Nunito', sans-serif;
+}
+
+#chatbox{
+    display: grid;
+    grid-area: c;
+    background-color: #ecf0f1;
+    padding: 15px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+}
+
+#input{
+    display: grid;
+    grid-area: i;
+    grid-template-columns: 4fr 1fr;
+}
+
+#input > div{
+    display: grid;
+    align-content: center; 
+    justify-content: center;
+    background-color: #8e44ad;
+    color: white;
+}
+.right{
+    display: grid;
+    background-color: #2ecc71;
+    padding-right: 2px;
+    padding-left: 2px;
+    align-self: end;
+    justify-self: end;
+    grid-template-areas: 
+    "txt tim";
+}
+
+.left{
+    display: grid;
+    background-color: #bdc3c7;
+    padding-left: 2px;
+    padding-right: 2px;
+    align-self: start;
+    justify-self: start;
+    grid-template-areas: 
+    "txt tim";
+}
+.text{
+    font-size: 30px;
+}
+.time{
+    display: grid;
+    align-self: end;
+}
