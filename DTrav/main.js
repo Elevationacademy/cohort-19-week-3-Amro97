@@ -10,8 +10,9 @@ $(".generator").click(function(){
 $(".validator").click(function(){
     let generatorText =  $(this).closest(".computer").find(".generator").text()
     let theMb = $(this).closest(".computer").find(".MB").text()
-    let qr1 = $(this).closest(".computer").find(".QR").text()
     console.log("Generator Text : " + generatorText)
     console.log("MB : " + theMb)
-    console.log("QR's : " + qr1)    
+    $(this).closest(".computer").find(".QR").each(function(){
+    console.log(`QR: ${$(this).text()}`)
+    })  
 })
